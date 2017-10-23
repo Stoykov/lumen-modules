@@ -1,0 +1,59 @@
+{
+  "name": "stoykov/lumen-modules",
+  "description": "Lumen Modulation",
+  "keywords": [
+    "modules",
+    "lumen",
+    "nwidart",
+    "stoykov",
+    "module"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Nicolas Widart",
+      "email": "n.widart@gmail.com",
+      "homepage": "https://nicolaswidart.com",
+      "role": "Developer"
+    },
+    {
+      "name": "Antoan Stoykov",
+      "email": "me@astoykov.com",
+      "homepage": "https://astoykov.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.0"
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^2.7",
+    "laravel/framework": "5.5.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "astoykov\\Modules\\": "src"
+    },
+    "files": [
+      "src/helpers.php"
+    ]
+  },
+  "autoload-dev": {
+
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "astoykov\\Modules\\ModulesServiceProvider"
+      ],
+      "aliases": {
+        "Module": "stoykov\\Modules\\Facades\\Module"
+      }
+    },
+    "branch-alias": {
+      "dev-master": "0.1-dev"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
