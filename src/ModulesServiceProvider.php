@@ -50,7 +50,7 @@ class ModulesServiceProvider extends ServiceProvider
         $this->app->singleton('modules', function ($app) {
             $path = $app['config']->get('modules.paths.modules');
 
-            return new \EC\Modules\Repository($app, $path);
+            return new \stoykov\Modules\Repository($app, $path);
         });
     }
 

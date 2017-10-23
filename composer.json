@@ -32,19 +32,14 @@
   },
   "autoload": {
     "psr-4": {
-      "astoykov\\Modules\\": "src"
+      "stoykov\\Modules\\": "src"
     },
-    "files": [
-      "src/helpers.php"
-    ]
-  },
-  "autoload-dev": {
-
+    "files": ["src/helpers.php"]
   },
   "extra": {
     "laravel": {
       "providers": [
-        "astoykov\\Modules\\ModulesServiceProvider"
+        "stoykov\\Modules\\ModulesServiceProvider"
       ],
       "aliases": {
         "Module": "stoykov\\Modules\\Facades\\Module"
@@ -53,7 +48,5 @@
     "branch-alias": {
       "dev-master": "0.1-dev"
     }
-  },
-  "minimum-stability": "dev",
-  "prefer-stable": true
+  }
 }
